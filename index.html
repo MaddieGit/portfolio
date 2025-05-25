@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap">
     <style>
-        body {
+       body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #e3e3e3, #f7f7f7);
@@ -51,14 +51,14 @@
             justify-content: center;
             gap: 2rem;
         }
-        .about-me img {
+        /*.about-me img {
             width: 300px;
             height: 300px;
             border-radius: 15px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
+        }*/
         .about-me div {
-            max-width: 500px;
+            max-width: auto; /*500px*/
         }
         .about-me h2 {
             font-size: 2.5rem;
@@ -78,6 +78,15 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s, box-shadow 0.3s;
             border-left: 6px solid #6a0dad;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .project img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .project:hover {
             transform: scale(1.04);
@@ -99,35 +108,29 @@
 <body>
     <header>
         <h1>My Portfolio</h1>
-        <p>Coming intern at TES Enterprise Solution</p>
+        <p>Coming intern @TES Enterprise Solution</p>
         <p></p>
-        <img src="profile.jpg" alt="Profile" class="profile">
+        <img src="index.jpg" alt="Profile" class="profile">
     </header>
 
+ 
     <section class="about-me">
-        <img src="profile.jpg" alt="About Me">
+            <!--<img src="profile2.jpeg" alt="About Me 1">-->
         <div>
             <h2>I Strive to Be the Best</h2>
             <p>My name is Mahder, you can call me Maddie. If you are checking out my portfolio, you have come along way, and so here is my linked<a href="www.linkedin.com/in/mahder-maddie-birhan-704b24280"> Maddie's Linkedin </a>, let's connect!
 
-            I am passionate about technology and continuously improving my skills. My goal is to become one of the best in the field, not just by achieving results but by staying curious and learning every day. I believe that true greatness comes from a combination of hard work, humility, and the willingness to adapt.</p>
+            I am passionate about computing, mainframe and continuously improving my skills. My goal is to become better if not the best, not just by achieving results but by staying curious and learning every day. I believe that true greatness comes from a combination of hard work, humility, and the willingness to adapt.</p>
         </div>
     </section>
 
     <section>
         <h2 style="font-size: 2.5rem; color: #6a0dad;">Projects</h2>
-        <div class="project">Project 1: Website Developement
-            <p>
-                Here is me being an official website developer: <a href="https://bccomputing.net/"> Bedford College</a> 
-                Start date: 03/2024 - 07/2025
-            </p>
-            <p>
-                <strong>Here is the background of this project:</strong><br>
-                In 2023 I did not even know html and so I joined Christian Nunel Fuente's (my website developement teacher and current project manager) website developement club to complete my website developement assignment and I did it! I was thrilled. Then we started the website for the Bedford College Computing department. It was launched at the start of 2025, since then we have been updating the website page and informing students with valueable information.  
-            </p>
-
-         </div>
-        <div class="project">Additional Projects:  Coming up!</div>
+        <div class="project"><img src="logo.png" alt="Project 1">Project 1: Here is me being an official website developer: <a href="https://bccomputing.net/"> Website Development Project</a> 
+        Start date: 03/2024 - 07/2025</div>
+        <div class="project"><img src="more_projects.png" alt="Project 2">More Projects coming up!</div>
+               <!-- <strong>Here is the background of this project:</strong><br>
+                In 2023 I did not even know html and so I joined Christian Nunel Fuente's (my website developement teacher and current project manager) website developement club to complete my website developement assignment and I did it! I was thrilled. Then we started the website for the Bedford College Computing department. It was launched at the start of 2025, since then we have been updating the website page and informing students with valueable information.  --->
         <!---<div class="project">Project 3: A brief description of the project.</div>--->
     </section>
 
